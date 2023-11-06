@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F5320C5D-6796-FCFD-5EBA-3E9FC4631399" name="CRUISE_PORT">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 14:13:29 UTC</createdTime>
+<generatorID>7F182F0E-EFEB-FB79-83AF-B798F72331D2</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cruise_id" id="B52A2972-B2A2-BACF-E902-10CA8F53097C">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 14:13:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Cruise ID]]></commentInRDBMS>
+<generatorID>4A2EF9BA-2A51-E218-4172-BD16319696AE</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2C411657-B118-DB11-568D-A35689187C79" referredColumn="CB2FA65E-1655-7C30-DE4D-F6C150083FD6"/>
+</associations>
+</Column>
+<Column name="port_code" id="AC6F977A-4CEB-45C1-7294-DACC8CA77027">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 14:13:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Port code]]></commentInRDBMS>
+<generatorID>9992F8C5-484F-B46D-A9DA-9DBE0B33378D</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7B374997-B693-FCD2-AAA1-406158A32ABA" referredColumn="56AAB89F-21BE-8FDE-AE74-82A27159C29C"/>
+</associations>
+</Column>
+<Column name="cp_datetime" id="16ADF322-0B2E-2B43-D3FC-DB2AC053C057">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 14:13:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Cruise port depature/arrival datetime]]></commentInRDBMS>
+<generatorID>2808EE51-8599-418D-FCB2-72B4414AAB9F</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A9972F6A-432E-2D03-AAC0-2E3E8549F9A0" name="CRUISE_PORT_PK">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 14:13:29 UTC</createdTime>
+<generatorID>E8C4E2B1-61DF-16FA-8375-A45B20977B7C</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B52A2972-B2A2-BACF-E902-10CA8F53097C"/>
+<colUsage columnID="AC6F977A-4CEB-45C1-7294-DACC8CA77027"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E98964B7-79CD-B22B-7A34-E89477877513" name="cruise_cruiseport">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 14:13:29 UTC</createdTime>
+<generatorID>950173D7-F73A-7F6F-0FD5-B8EF7FF6838E</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B52A2972-B2A2-BACF-E902-10CA8F53097C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E1B01811-61E7-2A8A-74C5-AE7302909A69" name="port_cruiseport">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 14:13:29 UTC</createdTime>
+<generatorID>13188E34-3211-C87D-22EF-F5A004D8CADC</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AC6F977A-4CEB-45C1-7294-DACC8CA77027"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

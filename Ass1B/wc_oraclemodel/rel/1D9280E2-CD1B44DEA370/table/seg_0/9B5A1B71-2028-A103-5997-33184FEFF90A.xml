@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9B5A1B71-2028-A103-5997-33184FEFF90A" name="CRUISE">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 13:36:41 UTC</createdTime>
+<generatorID>CF5C571D-60B7-A542-043D-2F8C91C33317</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cruise_id" id="E8558EF8-45AA-2718-9A39-5B18A60D2952">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 13:36:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Cruise ID]]></commentInRDBMS>
+<generatorID>F4D60E41-BEE1-894B-9935-19B07647D1F6</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cruise_name" id="001B2E27-FF15-3CAF-B13D-D6F2D7961B32">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 13:36:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Cruise's name]]></commentInRDBMS>
+<generatorID>BA0CFFFF-1BA0-EA60-8835-D4817DEE5A77</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cruise_desc" id="4354F635-FB0A-66F9-88FB-3D63E999FF43">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 13:36:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Description/additional info about cruise]]></commentInRDBMS>
+<generatorID>967B6436-A7E8-04D0-8433-85EA74596BE0</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ship_code" id="9C824F1B-2907-D8A7-9813-2AD7FC1AC2A8">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 13:36:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Ship code]]></commentInRDBMS>
+<generatorID>CFF29D86-D92D-722D-E39F-8540A470663C</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>6</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="300C6F6B-4000-7390-313D-C92F555DEDFB" referredColumn="3D940175-F7E6-5216-7E89-D3C48BC31E05"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3C22B02C-D1CF-4E59-6EF0-648C256482AF" name="CRUISE_PK">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 13:36:41 UTC</createdTime>
+<generatorID>F12A1290-CA46-8639-7073-DC959CCDC567</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E8558EF8-45AA-2718-9A39-5B18A60D2952"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5BB42CAF-B796-050D-2C6B-7BFB3F16AB16" name="ship_cruise">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 13:36:41 UTC</createdTime>
+<generatorID>EA24E60B-0B34-792E-0045-D335577C00A9</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9C824F1B-2907-D8A7-9813-2AD7FC1AC2A8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

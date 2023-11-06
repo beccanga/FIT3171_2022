@@ -1,0 +1,179 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F93A078B-0657-9919-2237-16EB99D3E908" name="TOUR">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 14:13:29 UTC</createdTime>
+<generatorID>1D138A91-EF97-0D85-21C4-C172024E957D</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="port_code" id="0A03F1E4-F3A9-7077-64D3-35EB88A72C7D">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 14:13:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Port code]]></commentInRDBMS>
+<generatorID>D10B647E-4742-173C-006A-7667935CB841</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="459C0254-1ABE-B736-7CCC-2EC663EA9C14" referredColumn="56AAB89F-21BE-8FDE-AE74-82A27159C29C"/>
+</associations>
+</Column>
+<Column name="tour_no" id="AAAC178C-EBD1-37C6-C405-514F0EB6D066">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 14:13:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tour number]]></commentInRDBMS>
+<generatorID>6A80EC02-6D9C-0E24-FAA3-0FCA45FF724C</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tour_name" id="BD3F7E3C-430F-157D-99DC-51DA67DE1E53">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 14:13:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tour Name]]></commentInRDBMS>
+<generatorID>AA01F31F-44D5-05BB-EE9F-714E67322662</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tour_desc" id="E7D0ED5A-ACC1-CDB6-A3A0-D21E5399E20B">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 14:13:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[The description of this particular tour on this particular port]]></commentInRDBMS>
+<generatorID>EBF84FFD-05BC-9F23-510F-591F902D8505</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tour_hours" id="0573D95F-B0E7-9342-C39C-3BF4BD7DC77B">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 14:13:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[total tour hours required]]></commentInRDBMS>
+<generatorID>0E26708B-E3DC-33AD-39CF-21B0457B37C2</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>1</dataTypeScale>
+<ownDataTypeParameters>,3,1</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tour_cost" id="F259755F-D86A-47C4-2D28-D1DE68933814">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 14:13:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[the total cost of tour per person]]></commentInRDBMS>
+<generatorID>BFD65D68-2DEA-3CFA-23A2-DFA2A5F4115E</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tour_wheel_chair" id="C8D313DE-976F-67D5-2830-625E63CB9FEA">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 14:13:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[wheel chair access on this tour - Y/N for Yes/No]]></commentInRDBMS>
+<generatorID>E38B99E7-99E7-CCA8-5D31-64026A6EF2C7</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<constraintName>chk_wheelchairaccess</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="N" description="No"/>
+<valueDef value="Y" description="Yes"/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tour_start_time" id="F4029C35-67BA-8BAA-21A2-D29EAB2192DD">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 14:13:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tour start time]]></commentInRDBMS>
+<generatorID>3E6BD65B-E90C-5EB0-2555-122C7F60315C</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tour_avaibility_id" id="9736FF1B-AA75-7EDC-ADAF-7A69918630F8">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 14:13:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tour Availability unique ID]]></commentInRDBMS>
+<generatorID>CACBD489-D755-0BE0-4A4C-214756CB50E0</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B2CF33AC-FDE9-94FD-D6F4-F90CAAA6ECDF" referredColumn="2A843A3B-D9AF-3C5F-31FA-978980A7C46E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="771E085C-D3C5-A831-758A-3C5C762DBF67" name="TOUR_PK">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 14:13:29 UTC</createdTime>
+<generatorID>CEFF25CB-C5BC-AC42-5656-550823EB6F4D</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AAAC178C-EBD1-37C6-C405-514F0EB6D066"/>
+<colUsage columnID="0A03F1E4-F3A9-7077-64D3-35EB88A72C7D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="43F0A5F8-C23E-3952-1312-54EF1E270737" name="port_tour">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 14:13:29 UTC</createdTime>
+<generatorID>6B080CB0-1375-40B5-AC91-7595A2796537</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0A03F1E4-F3A9-7077-64D3-35EB88A72C7D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0FA07D35-E2F0-3835-5BB9-616F9C291128" name="touravailability_tour">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 14:13:29 UTC</createdTime>
+<generatorID>78044A10-D5A0-8651-F093-5C065B3220F8</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9736FF1B-AA75-7EDC-ADAF-7A69918630F8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

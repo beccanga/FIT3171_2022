@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="995B1B7A-9F5A-F2A3-FC7C-0982A8A9AB73" containerWithKeyObject="3D52DEF2-3CB8-9FB2-C371-70DC8FA639D8" localFKIndex="9932AEBD-2F83-FA70-EA51-A914A220EE80" name="country_passengeraddr">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 13:36:41 UTC</createdTime>
+<generatorID>1274895E-D3FF-8693-D254-097AEABF9FBB</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<referredTableLongName>COUNTRY</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>4EB3578D-D329-1C4C-241D-24DA0543BA7D</referredTableID>
+<keyObject>63A55CE3-FF42-85EE-E444-069F9A932961</keyObject>
+<referredKeyID>63A55CE3-FF42-85EE-E444-069F9A932961</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>country_code</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

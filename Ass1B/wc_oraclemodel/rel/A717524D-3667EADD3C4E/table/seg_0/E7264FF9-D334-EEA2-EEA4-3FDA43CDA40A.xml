@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E7264FF9-D334-EEA2-EEA4-3FDA43CDA40A" name="TOUR_REPORT">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 14:13:29 UTC</createdTime>
+<generatorID>0C44D0F3-BF02-444D-2187-8849B88DFC8C</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="tour_report_id" id="306214CD-4A6D-B201-020F-F0896C3A031F">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 14:13:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[surrogate key for tour report key]]></commentInRDBMS>
+<generatorID>9D3D6913-5BD0-BD3B-4F59-B415375A9456</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="port_code" id="3621095F-51EB-E861-2AD3-933FDC462B99">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 14:13:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Port code]]></commentInRDBMS>
+<generatorID>1FA1E038-6E7B-0581-16A3-17193A5B9C5A</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="830AD43B-02DD-284C-6307-17BF75AFBC84" referredColumn="0A03F1E4-F3A9-7077-64D3-35EB88A72C7D"/>
+</associations>
+</Column>
+<Column name="tour_no" id="9FCC47D7-AD4F-9D3A-B2A8-A072B9E74FEF">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 14:13:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tour number]]></commentInRDBMS>
+<generatorID>8AB5971D-180D-524A-C81C-891FD745739D</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="830AD43B-02DD-284C-6307-17BF75AFBC84" referredColumn="AAAC178C-EBD1-37C6-C405-514F0EB6D066"/>
+</associations>
+</Column>
+<Column name="tour_date" id="523E8B1D-99C6-3B01-2AF0-4C12C6EB3C99">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 14:13:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[the date when tour starts]]></commentInRDBMS>
+<generatorID>A6364128-0425-6193-E88D-957436BD11EC</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="573DC336-2FDE-B008-C64C-414147374D46" name="TOUR_REPORT_PK">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 14:13:29 UTC</createdTime>
+<generatorID>7C82F9C7-E884-CFE6-3311-1CEF16490872</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="306214CD-4A6D-B201-020F-F0896C3A031F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5DADC5FB-FD0A-863F-30B3-1DA103A5810B" name="TOUR_REPORT_NK">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 14:13:29 UTC</createdTime>
+<generatorID>3C7442BF-9CED-5CCA-2885-157BED04DCD7</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="523E8B1D-99C6-3B01-2AF0-4C12C6EB3C99"/>
+<colUsage columnID="9FCC47D7-AD4F-9D3A-B2A8-A072B9E74FEF"/>
+<colUsage columnID="3621095F-51EB-E861-2AD3-933FDC462B99"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5EC6F01F-F866-E9FA-EA1A-CBA8FE30C78A" name="tour_tourreport">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 14:13:29 UTC</createdTime>
+<generatorID>911066A2-A10F-648C-6D0B-D3EA8AAAE564</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9FCC47D7-AD4F-9D3A-B2A8-A072B9E74FEF"/>
+<colUsage columnID="3621095F-51EB-E861-2AD3-933FDC462B99"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

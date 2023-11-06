@@ -1,0 +1,207 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4E4DBE7C-0BEE-7ABC-B1EC-9DF9D597B635" name="PASSENGER">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 13:36:41 UTC</createdTime>
+<generatorID>B9131587-B29C-1B69-DF8C-01C5D1CD63F6</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="passenger_id" id="005EBBD5-9DE6-66E9-080B-4A77E3AAE167">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 13:36:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Passenger ID]]></commentInRDBMS>
+<generatorID>2DE37E55-85E3-6EB9-19AC-8CD9B34F9455</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="passenger_fname" id="8C0DC600-5DF3-93DE-25BF-F41A2AFAAE55">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 13:36:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Passenger's first name]]></commentInRDBMS>
+<generatorID>9E618246-B877-2BD1-74D4-3E36AD9F3E66</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="passenger_lname" id="8E23253B-8EDB-6C59-3D4B-BD7994AAC861">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 13:36:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Passenger's last name]]></commentInRDBMS>
+<generatorID>55632A85-6000-170E-06F4-18FCCA4D3BD7</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="passenger_gender" id="808A5585-28AD-CC9F-405D-1229572553A3">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 13:36:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Passenger's gender - F(emale)/M(ale)/O(ther)]]></commentInRDBMS>
+<generatorID>0B334B1C-759F-C2E0-99C6-3CC21EBF24D0</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<constraintName>check_gender</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="F" description="Female"/>
+<valueDef value="M" description="Male"/>
+<valueDef value="O" description="Other"/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="passenger_dob" id="FE09E855-DEE7-F525-BBD7-CFE5CDBE5460">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 13:36:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Passenger's date of birth]]></commentInRDBMS>
+<generatorID>8783FE0E-D4C2-0433-67E4-A6DFB988B6D2</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="passenger_lang" id="086DB62D-3E26-CC57-FCD8-C73AC6DBF0A6">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 13:36:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Passenger Primary Language]]></commentInRDBMS>
+<generatorID>3E537347-B501-B954-3ED9-9AD124BCB9DD</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="passenger_phone" id="48F3C0DE-0EEA-7AAB-CF9F-7019644EBF30">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 13:36:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Passenger phone number including country code prefix - 15 digits max]]></commentInRDBMS>
+<generatorID>92A0375E-C9D8-7F9D-3475-25BFBFA793E6</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="passenger_addr_code" id="598525C9-F824-2D41-68E8-9868A66ACC59">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 13:36:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[surrogate key for passenger's address]]></commentInRDBMS>
+<generatorID>B3019F7F-8937-492E-6246-F5EE70EBBB8B</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AEFB2647-B3CC-1D5F-CAA7-9C3176CA6221" referredColumn="BBC2D420-1FB3-CC70-D10B-139E395BA657"/>
+</associations>
+</Column>
+<Column name="language_code" id="C4900361-8649-C6CD-A7BC-CE52CE7052C6">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 13:36:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[The code for language  stored as ISO 639-1 Alpha-2 codes]]></commentInRDBMS>
+<generatorID>523A3B09-711F-4AAD-209C-A01B9AC06AB5</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BA13CFB4-CBED-1675-EB66-EAFC731BCE36" referredColumn="35218D55-C591-222D-44D6-13F03916BF7C"/>
+</associations>
+</Column>
+<Column name="guardian_id" id="AD4C9A6B-3D9A-9D15-38CB-4B1120F0050F">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 13:36:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Passenger ID]]></commentInRDBMS>
+<generatorID>57E3596E-E144-AD5B-5806-1D034214F0E7</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="82027184-DB7A-4DE1-9563-8803C908A99B" referredColumn="005EBBD5-9DE6-66E9-080B-4A77E3AAE167"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="739412E2-AE83-D19A-51BA-817E4904D202" name="PASSENGER_PK">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 13:36:41 UTC</createdTime>
+<generatorID>3F923196-F3C1-3025-593D-84988538ADE3</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="005EBBD5-9DE6-66E9-080B-4A77E3AAE167"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="69DDE296-E809-5097-6531-69AD57CD937B" name="guardian_ward">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 13:36:41 UTC</createdTime>
+<generatorID>4349F711-8CAC-A90C-FFD1-5FBC35B6A808</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AD4C9A6B-3D9A-9D15-38CB-4B1120F0050F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B90308B2-1D38-BA66-27D2-C38208C416C4" name="language_passenger">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 13:36:41 UTC</createdTime>
+<generatorID>43647B00-D0DB-97D3-0D35-E8A4FB8FFD5C</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C4900361-8649-C6CD-A7BC-CE52CE7052C6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="75BA1E1F-A0B1-AFA4-BB5A-BBA46C707492" name="passengeraddress_passenger">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 13:36:41 UTC</createdTime>
+<generatorID>3B4D47B2-76AE-4BDD-C41C-8D4CCB1ECDF5</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="598525C9-F824-2D41-68E8-9868A66ACC59"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

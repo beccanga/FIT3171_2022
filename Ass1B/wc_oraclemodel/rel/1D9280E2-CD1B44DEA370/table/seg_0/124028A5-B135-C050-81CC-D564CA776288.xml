@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="124028A5-B135-C050-81CC-D564CA776288" name="CABIN">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 13:36:41 UTC</createdTime>
+<generatorID>6BD907C7-4413-263A-BA8D-7FF9574854B3</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cabin_no" id="1F1FD84D-94C6-7C6D-E33C-F04FAC402875">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 13:36:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Cabin Number]]></commentInRDBMS>
+<generatorID>36EC2B68-DCE5-F2CF-B934-37F3F248BED4</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ship_code" id="F43D5B36-89A0-0136-0982-DE263867D65F">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 13:36:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Ship code]]></commentInRDBMS>
+<generatorID>275D003B-634C-B589-B414-594A847209EF</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>6</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C8655F96-EC31-D0D3-DBD4-BE53C1302BBD" referredColumn="3D940175-F7E6-5216-7E89-D3C48BC31E05"/>
+</associations>
+</Column>
+<Column name="cabin_capacity" id="02FF6FE3-C2B4-A8A9-5B5B-F55741697843">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 13:36:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Cabin's max guest capacity]]></commentInRDBMS>
+<generatorID>A7771960-0F68-A311-87B2-BE9064FBB34C</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cabin_class" id="3B1105EE-6ACF-08CE-6F99-C7737C2D49C9">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 13:36:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Cabin's class- I(nterior), O(cean view), B(alcony), S(uite)]]></commentInRDBMS>
+<generatorID>435EF099-BD71-0118-5024-8E0ADFBD3B34</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<constraintName>chk_cabin_class</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="B" description="Balcony"/>
+<valueDef value="I" description="Interior"/>
+<valueDef value="O" description="Ocean view"/>
+<valueDef value="S" description="Suite"/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E139818D-8DBA-A9E1-73BC-1C19E275B5CF" name="CABIN_PK">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 13:36:41 UTC</createdTime>
+<generatorID>CACC4064-B3DE-9FE4-6F77-92FE2D335210</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1F1FD84D-94C6-7C6D-E33C-F04FAC402875"/>
+<colUsage columnID="F43D5B36-89A0-0136-0982-DE263867D65F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A5CD0F39-A188-49E5-20BB-CAB6AD9FB2A3" name="ship_cabin">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 13:36:41 UTC</createdTime>
+<generatorID>713CB8F1-F696-EF96-6B89-FBF1565CB01B</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F43D5B36-89A0-0136-0982-DE263867D65F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

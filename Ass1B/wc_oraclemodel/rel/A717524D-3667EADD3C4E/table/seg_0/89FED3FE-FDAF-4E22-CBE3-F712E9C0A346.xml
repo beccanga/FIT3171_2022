@@ -1,0 +1,129 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="89FED3FE-FDAF-4E22-CBE3-F712E9C0A346" name="TOUR_PASSENGER">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 14:13:29 UTC</createdTime>
+<generatorID>1D9CC7D3-26F2-4355-AC74-A9A97055983F</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="tour_report_id" id="154F919F-5C95-636A-D1C2-6A181AB5EAFD">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 14:13:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[surrogate key for tour report key]]></commentInRDBMS>
+<generatorID>BD9C2FAE-431F-6E98-4BA4-ECFC07E45D33</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="236A08FB-0494-FC0A-3B45-D619C25B4785" referredColumn="306214CD-4A6D-B201-020F-F0896C3A031F"/>
+</associations>
+</Column>
+<Column name="passenger_id" id="8D43F8B2-CD7D-D1D7-35B1-D8A76DA499AF">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 14:13:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Passenger ID]]></commentInRDBMS>
+<generatorID>5665A7B3-FD72-B70B-67D3-E62ED44FA162</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C9CDDDA4-A233-192B-C020-4CD8E6EC12FB" referredColumn="A628CCE3-7D2B-2406-9B51-885387B4B5F3"/>
+</associations>
+</Column>
+<Column name="payment_received" id="A99DD84F-8AE8-9E97-C1BE-760ADC267735">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 14:13:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Payment received? Y/N for YES/NO ]]></commentInRDBMS>
+<generatorID>032C411B-6AA1-37F8-D106-E6F5665D6CD0</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<constraintName>chk_paymentreceived</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="N" description="No"/>
+<valueDef value="Y" description="Yes"/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cruise_id" id="EB37355C-9AF1-C81A-FEF1-5542F0034538">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 14:13:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Cruise ID]]></commentInRDBMS>
+<generatorID>58040282-BE80-3FED-D389-8443C093F848</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="22B83869-B0EF-A2A3-7FA8-9D4E8A29CE8A" referredColumn="CB2FA65E-1655-7C30-DE4D-F6C150083FD6"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F2B39384-356B-EA7E-0838-A0FC85C5B0C9" name="TOUR_PASSENGER_PK">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 14:13:29 UTC</createdTime>
+<generatorID>1E802806-7578-65C9-447F-E7A385F6A322</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8D43F8B2-CD7D-D1D7-35B1-D8A76DA499AF"/>
+<colUsage columnID="154F919F-5C95-636A-D1C2-6A181AB5EAFD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9913F637-6195-29F6-D46C-B24413C446E0" name="cruise_tourpassenger">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 14:13:29 UTC</createdTime>
+<generatorID>EFE1FA3C-26CB-F3E0-A7FD-73E896851361</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EB37355C-9AF1-C81A-FEF1-5542F0034538"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B3322F35-0E94-C240-FD72-546E0C3F5D62" name="passenger_tourpassenger">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 14:13:29 UTC</createdTime>
+<generatorID>B0DF7CA0-DECC-C1A8-5BB2-9FF0C09CECFB</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8D43F8B2-CD7D-D1D7-35B1-D8A76DA499AF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6B70FC92-4525-AE6E-0F3C-1B1DDFE608CB" name="tourreport_tourpassenger">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 14:13:29 UTC</createdTime>
+<generatorID>07FA15B8-D305-F4E5-2236-A3075FF9461C</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="154F919F-5C95-636A-D1C2-6A181AB5EAFD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

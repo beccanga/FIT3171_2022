@@ -1,0 +1,146 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="401816D4-DEA4-0243-AC48-FBD92A54F6E9" name="SHIP">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 13:36:41 UTC</createdTime>
+<generatorID>FCDA92FC-24A9-2A3B-5421-9AE8C1AA7877</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ship_code" id="3D940175-F7E6-5216-7E89-D3C48BC31E05">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 13:36:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Ship code]]></commentInRDBMS>
+<generatorID>BD3C8526-C681-E12E-025A-F2D57F76548D</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>6</dataTypeSize>
+<ownDataTypeParameters>6,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ship_name" id="3D9A4B90-72E0-4484-ADD7-0FACCDA99A6A">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 13:36:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Ship's name]]></commentInRDBMS>
+<generatorID>47561725-7DE2-0055-AE4E-1B22C9E56823</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ship_date" id="5E24AA0E-2E1B-DBEF-B087-D353021644B5">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 13:36:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date when ship was commissioned]]></commentInRDBMS>
+<generatorID>F8CCDF9D-1F54-A3F9-B4E2-037FE1971E89</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ship_tonnage" id="F9A6F18A-958B-975D-F616-5927B3624D08">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 13:36:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Ship's tonnage]]></commentInRDBMS>
+<generatorID>851B0224-3361-96FF-83CF-7081301F5E9C</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ship_capacity" id="5DFE4F1C-B7F8-72F4-A4C0-6A963933B3CA">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 13:36:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Ship's maximum guest capacity]]></commentInRDBMS>
+<generatorID>26AA4BEE-EB80-FB99-4C0D-19621F5E903C</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="country_code" id="1EC8774F-EB99-F787-4B29-454CA4E1D710">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 13:36:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Country code in ISO 3166-1 Alpha-2 format]]></commentInRDBMS>
+<generatorID>E0FDDF57-B311-C98B-5293-F529087C1B3B</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E0114FE3-1841-3F71-0DD6-A847BF8168D8" referredColumn="35A4922D-E908-3F14-8AC7-7450A751D747"/>
+</associations>
+</Column>
+<Column name="operator_id" id="AF69B0BC-342B-216F-2510-EBDB78AEA57B">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 13:36:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Operator ID]]></commentInRDBMS>
+<generatorID>6D51F022-3605-C58E-7906-3B20FA6E2D2A</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F0D1B118-0A38-7FCE-1B52-0E99F3A17961" referredColumn="D24954BC-FDDD-6997-EEE1-9820F80496C8"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0E4BB17D-AE23-7933-004E-7EA3FD1D7414" name="SHIP_PK">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 13:36:41 UTC</createdTime>
+<generatorID>09E7EBC6-4268-92AE-6691-C2DBC9D909B3</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3D940175-F7E6-5216-7E89-D3C48BC31E05"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8EBA117B-95C9-42E2-770C-BF46236730B9" name="country_ship">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 13:36:41 UTC</createdTime>
+<generatorID>394053F4-3CA1-C49B-8BE1-DDA7649EA8EC</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1EC8774F-EB99-F787-4B29-454CA4E1D710"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0655157F-ACCC-AAC7-6D0A-4FD9B585F6A3" name="operator_ship">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 13:36:41 UTC</createdTime>
+<generatorID>76DC6759-2590-2AFA-1C8A-F1BCED2993C4</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AF69B0BC-342B-216F-2510-EBDB78AEA57B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

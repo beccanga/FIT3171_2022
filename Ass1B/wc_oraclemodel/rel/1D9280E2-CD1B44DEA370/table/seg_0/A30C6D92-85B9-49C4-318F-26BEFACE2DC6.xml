@@ -1,0 +1,141 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A30C6D92-85B9-49C4-318F-26BEFACE2DC6" name="MANIFEST">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 13:36:41 UTC</createdTime>
+<generatorID>1C526F2C-B7D4-8101-EAA7-6D96702876BE</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="passenger_id" id="8DF87C85-073E-3303-E816-1AE29FD0834F">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 13:36:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Passenger ID]]></commentInRDBMS>
+<generatorID>62D68CDA-54D8-7713-CA32-7D41D143CBE8</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BCC68305-0420-4E92-8D79-20DDBC89A785" referredColumn="005EBBD5-9DE6-66E9-080B-4A77E3AAE167"/>
+</associations>
+</Column>
+<Column name="cruise_id" id="1B725C6C-B4FE-6120-BB51-B5D2170E0D73">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 13:36:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Cruise ID]]></commentInRDBMS>
+<generatorID>3B516417-563A-BBA9-824C-36A26A03AB78</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CDD1DDAC-2C5B-93AD-BAB9-9E59B4FCD4D5" referredColumn="E8558EF8-45AA-2718-9A39-5B18A60D2952"/>
+</associations>
+</Column>
+<Column name="boarding_datetime" id="31C11F6E-CDE1-82F4-98F4-EFE24E626740">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 13:36:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Passenger cruise boarding date and time]]></commentInRDBMS>
+<generatorID>8C706BEB-326F-5262-FC56-8E00FFF1C388</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cabin_no" id="A27E4879-EA48-0CCA-2BB9-4E53F4700F3A">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 13:36:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Cabin Number]]></commentInRDBMS>
+<generatorID>BD5634ED-0E01-3FE4-9698-B898C552F396</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F26C4225-DC29-9817-9AEC-40CA3709A9A6" referredColumn="1F1FD84D-94C6-7C6D-E33C-F04FAC402875"/>
+</associations>
+</Column>
+<Column name="ship_code" id="8409773F-9610-DB99-642D-FCAD40EE2F2C">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 13:36:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Ship code]]></commentInRDBMS>
+<generatorID>EC107C41-C490-EDD6-AEC7-6AE2DC10B162</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>6</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F26C4225-DC29-9817-9AEC-40CA3709A9A6" referredColumn="F43D5B36-89A0-0136-0982-DE263867D65F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="57DC8CC1-4615-4379-D4FA-332E5DBBB633" name="MANIFEST_PK">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 13:36:41 UTC</createdTime>
+<generatorID>DA83455E-619F-1FAD-3E87-0CB4D8E5D4DE</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8DF87C85-073E-3303-E816-1AE29FD0834F"/>
+<colUsage columnID="1B725C6C-B4FE-6120-BB51-B5D2170E0D73"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="844ED516-A17F-D11B-9B28-B261F6509C1A" name="cabin_manifest">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 13:36:41 UTC</createdTime>
+<generatorID>F0E50EAF-7513-704C-3065-25A7398D1E98</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A27E4879-EA48-0CCA-2BB9-4E53F4700F3A"/>
+<colUsage columnID="8409773F-9610-DB99-642D-FCAD40EE2F2C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E8063095-4C53-BAE8-7889-A93E46653D9C" name="cruise_manifest">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 13:36:41 UTC</createdTime>
+<generatorID>5949A12E-D40C-DAAC-74E2-69ABE50DF6E4</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1B725C6C-B4FE-6120-BB51-B5D2170E0D73"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0F0F75E8-1604-1805-2886-EBF53BE0BC9A" name="passenger_manifest">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 13:36:41 UTC</createdTime>
+<generatorID>CAE22638-4511-400D-CDE4-ED6F1D7EB7F5</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8DF87C85-073E-3303-E816-1AE29FD0834F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
