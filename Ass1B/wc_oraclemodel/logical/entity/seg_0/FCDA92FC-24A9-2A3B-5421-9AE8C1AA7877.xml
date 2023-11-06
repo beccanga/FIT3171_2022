@@ -1,0 +1,134 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FCDA92FC-24A9-2A3B-5421-9AE8C1AA7877" name="SHIP">
+<createdBy>rebeccanga</createdBy>
+<createdTime>2022-04-22 06:02:31 UTC</createdTime>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="44AEED3F-5255-7A74-60D7-31E8543DE5B4" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ship_code" id="BD3C8526-C681-E12E-025A-F2D57F76548D">
+<createdBy>rebeccanga</createdBy>
+<createdTime>2022-04-22 06:02:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Ship code]]></commentInRDBMS>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="44AEED3F-5255-7A74-60D7-31E8543DE5B4" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>6</dataTypeSize>
+<ownDataTypeParameters>6,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ship_name" id="47561725-7DE2-0055-AE4E-1B22C9E56823">
+<createdBy>rebeccanga</createdBy>
+<createdTime>2022-04-22 06:02:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[Ship's name]]></commentInRDBMS>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="44AEED3F-5255-7A74-60D7-31E8543DE5B4" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ship_date" id="F8CCDF9D-1F54-A3F9-B4E2-037FE1971E89">
+<createdBy>rebeccanga</createdBy>
+<createdTime>2022-04-22 06:03:18 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date when ship was commissioned]]></commentInRDBMS>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="44AEED3F-5255-7A74-60D7-31E8543DE5B4" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ship_tonnage" id="851B0224-3361-96FF-83CF-7081301F5E9C">
+<createdBy>rebeccanga</createdBy>
+<createdTime>2022-04-22 06:03:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Ship's tonnage]]></commentInRDBMS>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="44AEED3F-5255-7A74-60D7-31E8543DE5B4" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ship_capacity" id="26AA4BEE-EB80-FB99-4C0D-19621F5E903C">
+<createdBy>rebeccanga</createdBy>
+<createdTime>2022-04-22 06:04:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[Ship's maximum guest capacity]]></commentInRDBMS>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="44AEED3F-5255-7A74-60D7-31E8543DE5B4" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="country_code" id="E0FDDF57-B311-C98B-5293-F529087C1B3B">
+<createdBy>RUIQIAN</createdBy>
+<createdTime>2022-04-26 13:31:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Country code]]></commentInRDBMS>
+<generatorID>394053F4-3CA1-C49B-8BE1-DDA7649EA8EC</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="44AEED3F-5255-7A74-60D7-31E8543DE5B4" value="true"/>
+</engineerTo>
+<referedAttribute>519E251F-697A-DBB7-CBBD-0B993DE38D4F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="operator_id" id="6D51F022-3605-C58E-7906-3B20FA6E2D2A">
+<createdBy>rebeccanga</createdBy>
+<createdTime>2022-04-22 06:27:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Operator ID]]></commentInRDBMS>
+<generatorID>76DC6759-2590-2AFA-1C8A-F1BCED2993C4</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="44AEED3F-5255-7A74-60D7-31E8543DE5B4" value="true"/>
+</engineerTo>
+<referedAttribute>5228FCE5-7927-D793-66FB-118696A826E9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="09E7EBC6-4268-92AE-6691-C2DBC9D909B3" name="SHIP PK">
+<createdBy>rebeccanga</createdBy>
+<createdTime>2022-04-22 06:02:49 UTC</createdTime>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="44AEED3F-5255-7A74-60D7-31E8543DE5B4" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>BD3C8526-C681-E12E-025A-F2D57F76548D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

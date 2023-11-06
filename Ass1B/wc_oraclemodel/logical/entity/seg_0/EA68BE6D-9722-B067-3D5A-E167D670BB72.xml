@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="EA68BE6D-9722-B067-3D5A-E167D670BB72" name="TOUR_AVAILABILITY">
+<createdBy>RUIQIAN</createdBy>
+<createdTime>2022-04-26 15:05:41 UTC</createdTime>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="44AEED3F-5255-7A74-60D7-31E8543DE5B4" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="tour_avaibility_id" id="1EBD96F3-F19A-0DB7-54B3-06223CB7FA49">
+<createdBy>RUIQIAN</createdBy>
+<createdTime>2022-04-26 15:06:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tour Availability unique ID]]></commentInRDBMS>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="44AEED3F-5255-7A74-60D7-31E8543DE5B4" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tour_avaibility_schedule" id="4A7E5867-9E52-527A-D489-CE77912BF34B">
+<createdBy>RUIQIAN</createdBy>
+<createdTime>2022-04-26 15:06:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tour schedule (e.g Monday, Tuesday, ..., Weekdays, Weekends)]]></commentInRDBMS>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="44AEED3F-5255-7A74-60D7-31E8543DE5B4" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="625DA295-0881-788C-E5C0-4A51093D7454" name="TOUR_AVAILABILITY PK">
+<createdBy>RUIQIAN</createdBy>
+<createdTime>2022-04-26 15:06:21 UTC</createdTime>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="44AEED3F-5255-7A74-60D7-31E8543DE5B4" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1EBD96F3-F19A-0DB7-54B3-06223CB7FA49</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

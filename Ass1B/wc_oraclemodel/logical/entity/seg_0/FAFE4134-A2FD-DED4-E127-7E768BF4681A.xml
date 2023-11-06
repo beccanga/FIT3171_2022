@@ -1,0 +1,109 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FAFE4134-A2FD-DED4-E127-7E768BF4681A" name="PORT_TEMP">
+<createdBy>RUIQIAN</createdBy>
+<createdTime>2022-04-26 09:00:36 UTC</createdTime>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="44AEED3F-5255-7A74-60D7-31E8543DE5B4" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="port_code" id="7175BD62-14D4-80CA-074B-1963FCC112EE">
+<createdBy>RUIQIAN</createdBy>
+<createdTime>2022-04-26 10:16:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Port code]]></commentInRDBMS>
+<generatorID>CB8631E8-9E42-97A3-FB49-46AE284CD0A1</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="44AEED3F-5255-7A74-60D7-31E8543DE5B4" value="true"/>
+</engineerTo>
+<referedAttribute>5D81A424-CA11-5721-B4DB-1A0D6BDF2F7C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="temp_month" id="53F25534-B57F-ADD3-43D1-1F88B19297DC">
+<createdBy>RUIQIAN</createdBy>
+<createdTime>2022-04-26 09:03:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[The time month for temperature at port]]></commentInRDBMS>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="44AEED3F-5255-7A74-60D7-31E8543DE5B4" value="true"/>
+</engineerTo>
+<constraintName>chk_month</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<listOfValues>
+<valueDef value="APR" description="April"/>
+<valueDef value="AUG" description="August"/>
+<valueDef value="DEC" description="December"/>
+<valueDef value="FEB" description="February"/>
+<valueDef value="JAN" description="January"/>
+<valueDef value="JUL" description="July"/>
+<valueDef value="JUN" description="June"/>
+<valueDef value="MAR" description="March"/>
+<valueDef value="MAY" description="May"/>
+<valueDef value="NOV" description="November"/>
+<valueDef value="OCT" description="October"/>
+<valueDef value="SEP" description="September"/>
+</listOfValues>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="temp_avg_high" id="84BC5702-3115-5F1E-5EE7-EAD2054F9CF1">
+<createdBy>RUIQIAN</createdBy>
+<createdTime>2022-04-26 09:04:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[average high temperature of a month]]></commentInRDBMS>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="44AEED3F-5255-7A74-60D7-31E8543DE5B4" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="temp_avg_low" id="148D6556-0427-B3AF-4AAC-52B29A7949DF">
+<createdBy>RUIQIAN</createdBy>
+<createdTime>2022-04-26 09:05:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[average low temperature for a month]]></commentInRDBMS>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="44AEED3F-5255-7A74-60D7-31E8543DE5B4" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="CEEEF0F6-F361-1417-6CD9-0E79D0CD377E" name="PORT_TEMP PK">
+<createdBy>RUIQIAN</createdBy>
+<createdTime>2022-04-26 09:02:41 UTC</createdTime>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="44AEED3F-5255-7A74-60D7-31E8543DE5B4" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>53F25534-B57F-ADD3-43D1-1F88B19297DC</attributeRef>
+<attributeRef>7175BD62-14D4-80CA-074B-1963FCC112EE</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

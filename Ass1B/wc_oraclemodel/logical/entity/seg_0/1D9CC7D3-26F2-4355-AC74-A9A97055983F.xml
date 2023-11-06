@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1D9CC7D3-26F2-4355-AC74-A9A97055983F" name="TOUR_PASSENGER">
+<createdBy>rebeccanga</createdBy>
+<createdTime>2022-04-22 07:24:21 UTC</createdTime>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="44AEED3F-5255-7A74-60D7-31E8543DE5B4" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="tour_report_id" id="BD9C2FAE-431F-6E98-4BA4-ECFC07E45D33">
+<createdBy>RUIQIAN</createdBy>
+<createdTime>2022-04-26 15:58:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[surrogate key for tour report key]]></commentInRDBMS>
+<generatorID>07FA15B8-D305-F4E5-2236-A3075FF9461C</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="44AEED3F-5255-7A74-60D7-31E8543DE5B4" value="true"/>
+</engineerTo>
+<referedAttribute>9D3D6913-5BD0-BD3B-4F59-B415375A9456</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="passenger_id" id="5665A7B3-FD72-B70B-67D3-E62ED44FA162">
+<createdBy>RUIQIAN</createdBy>
+<createdTime>2022-04-26 15:45:16 UTC</createdTime>
+<commentInRDBMS><![CDATA[Passenger ID]]></commentInRDBMS>
+<generatorID>B0DF7CA0-DECC-C1A8-5BB2-9FF0C09CECFB</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="44AEED3F-5255-7A74-60D7-31E8543DE5B4" value="true"/>
+</engineerTo>
+<referedAttribute>2DE37E55-85E3-6EB9-19AC-8CD9B34F9455</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="payment_received" id="032C411B-6AA1-37F8-D106-E6F5665D6CD0">
+<createdBy>rebeccanga</createdBy>
+<createdTime>2022-04-22 07:25:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Payment received? Y/N for YES/NO ]]></commentInRDBMS>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="44AEED3F-5255-7A74-60D7-31E8543DE5B4" value="true"/>
+</engineerTo>
+<constraintName>chk_paymentreceived</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="N" description="No"/>
+<valueDef value="Y" description="Yes"/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cruise_id" id="58040282-BE80-3FED-D389-8443C093F848">
+<createdBy>RUIQIAN</createdBy>
+<createdTime>2022-04-26 15:44:15 UTC</createdTime>
+<commentInRDBMS><![CDATA[Cruise ID]]></commentInRDBMS>
+<generatorID>EFE1FA3C-26CB-F3E0-A7FD-73E896851361</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="44AEED3F-5255-7A74-60D7-31E8543DE5B4" value="true"/>
+</engineerTo>
+<referedAttribute>F4D60E41-BEE1-894B-9935-19B07647D1F6</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="1E802806-7578-65C9-447F-E7A385F6A322" name="TOUR_PASSENGER PK">
+<createdBy>rebeccanga</createdBy>
+<createdTime>2022-04-22 07:24:59 UTC</createdTime>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="44AEED3F-5255-7A74-60D7-31E8543DE5B4" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5665A7B3-FD72-B70B-67D3-E62ED44FA162</attributeRef>
+<attributeRef>BD9C2FAE-431F-6E98-4BA4-ECFC07E45D33</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

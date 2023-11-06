@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="guardian_ward" directorySegmentName="seg_0" id="4349F711-8CAC-A90C-FFD1-5FBC35B6A808">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 12:17:23 UTC</createdTime>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="44AEED3F-5255-7A74-60D7-31E8543DE5B4" value="true"/>
+</engineerTo>
+<targetPk>3F923196-F3C1-3025-593D-84988538ADE3</targetPk>
+<identifying>false</identifying>
+<nameOnSource>guardian of</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>B9131587-B29C-1B69-DF8C-01C5D1CD63F6</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>B9131587-B29C-1B69-DF8C-01C5D1CD63F6</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6BD907C7-4413-263A-BA8D-7FF9574854B3" name="CABIN">
+<createdBy>rebeccanga</createdBy>
+<createdTime>2022-04-22 06:11:47 UTC</createdTime>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="44AEED3F-5255-7A74-60D7-31E8543DE5B4" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cabin_no" id="36EC2B68-DCE5-F2CF-B934-37F3F248BED4">
+<createdBy>rebeccanga</createdBy>
+<createdTime>2022-04-22 06:11:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Cabin Number]]></commentInRDBMS>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="44AEED3F-5255-7A74-60D7-31E8543DE5B4" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ship_code" id="275D003B-634C-B589-B414-594A847209EF">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-27 11:50:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[Ship code]]></commentInRDBMS>
+<generatorID>713CB8F1-F696-EF96-6B89-FBF1565CB01B</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="44AEED3F-5255-7A74-60D7-31E8543DE5B4" value="true"/>
+</engineerTo>
+<referedAttribute>BD3C8526-C681-E12E-025A-F2D57F76548D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>6</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cabin_capacity" id="A7771960-0F68-A311-87B2-BE9064FBB34C">
+<createdBy>rebeccanga</createdBy>
+<createdTime>2022-04-22 06:12:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[Cabin's max guest capacity]]></commentInRDBMS>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="44AEED3F-5255-7A74-60D7-31E8543DE5B4" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cabin_class" id="435EF099-BD71-0118-5024-8E0ADFBD3B34">
+<createdBy>rebeccanga</createdBy>
+<createdTime>2022-04-22 06:12:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Cabin's class- I(nterior), O(cean view), B(alcony), S(uite)]]></commentInRDBMS>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="44AEED3F-5255-7A74-60D7-31E8543DE5B4" value="true"/>
+</engineerTo>
+<constraintName>chk_cabin_class</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="B" description="Balcony"/>
+<valueDef value="I" description="Interior"/>
+<valueDef value="O" description="Ocean view"/>
+<valueDef value="S" description="Suite"/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="CACC4064-B3DE-9FE4-6F77-92FE2D335210" name="CABIN PK">
+<createdBy>rebeccanga</createdBy>
+<createdTime>2022-04-22 06:12:05 UTC</createdTime>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="44AEED3F-5255-7A74-60D7-31E8543DE5B4" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>36EC2B68-DCE5-F2CF-B934-37F3F248BED4</attributeRef>
+<attributeRef>275D003B-634C-B589-B414-594A847209EF</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

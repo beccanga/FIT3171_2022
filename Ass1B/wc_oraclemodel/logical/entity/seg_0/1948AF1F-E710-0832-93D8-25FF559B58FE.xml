@@ -1,0 +1,121 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1948AF1F-E710-0832-93D8-25FF559B58FE" name="PASSENGER_ADDR">
+<createdBy>rebeccanga</createdBy>
+<createdTime>2022-04-22 06:19:56 UTC</createdTime>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="44AEED3F-5255-7A74-60D7-31E8543DE5B4" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="passenger_addr_code" id="FE2737E0-97DC-8BBC-00DE-B9D06BAAE64B">
+<createdBy>larstan</createdBy>
+<createdTime>2022-04-23 14:05:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[surrogate key for passenger's address]]></commentInRDBMS>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="44AEED3F-5255-7A74-60D7-31E8543DE5B4" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="passenger_addr_street" id="896CB98C-6549-979E-AD14-1A94D1393ADF">
+<createdBy>rebeccanga</createdBy>
+<createdTime>2022-04-22 06:20:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Passenger's address street]]></commentInRDBMS>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="44AEED3F-5255-7A74-60D7-31E8543DE5B4" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="passenger_addr_town" id="7C117402-DD57-A160-50A5-FFFEF039C388">
+<createdBy>rebeccanga</createdBy>
+<createdTime>2022-04-22 06:20:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Passenger's address town]]></commentInRDBMS>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="44AEED3F-5255-7A74-60D7-31E8543DE5B4" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="passenger_addr_postcode" id="DD3B919D-D29B-3407-D9F2-46E60A104F78">
+<createdBy>rebeccanga</createdBy>
+<createdTime>2022-04-22 06:20:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Passenger's address postcode]]></commentInRDBMS>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="44AEED3F-5255-7A74-60D7-31E8543DE5B4" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="country_code" id="C5353D74-562D-591B-830E-8A5157C8629B">
+<createdBy>RUIQIAN</createdBy>
+<createdTime>2022-04-26 10:59:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Country code]]></commentInRDBMS>
+<generatorID>1274895E-D3FF-8693-D254-097AEABF9FBB</generatorID>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="44AEED3F-5255-7A74-60D7-31E8543DE5B4" value="true"/>
+</engineerTo>
+<referedAttribute>519E251F-697A-DBB7-CBBD-0B993DE38D4F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="302CAD9F-C754-8BB7-E03D-713621CE4A48" name="PASSENGER_ADDR PK">
+<createdBy>rebeccanga</createdBy>
+<createdTime>2022-04-22 06:20:27 UTC</createdTime>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="44AEED3F-5255-7A74-60D7-31E8543DE5B4" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>FE2737E0-97DC-8BBC-00DE-B9D06BAAE64B</newElementsIDs>
+<usedAttributes>
+<attributeRef>FE2737E0-97DC-8BBC-00DE-B9D06BAAE64B</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="C257F709-6C1B-8D12-6A02-144914DD14DF" name="PASSENGER_ADDR_NK">
+<createdBy>RUIQIAN</createdBy>
+<createdTime>2022-04-26 09:51:21 UTC</createdTime>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="44AEED3F-5255-7A74-60D7-31E8543DE5B4" value="true"/>
+</engineerTo>
+<newElementsIDs>896CB98C-6549-979E-AD14-1A94D1393ADF,7C117402-DD57-A160-50A5-FFFEF039C388,DD3B919D-D29B-3407-D9F2-46E60A104F78,C5353D74-562D-591B-830E-8A5157C8629B</newElementsIDs>
+<usedAttributes>
+<attributeRef>896CB98C-6549-979E-AD14-1A94D1393ADF</attributeRef>
+<attributeRef>7C117402-DD57-A160-50A5-FFFEF039C388</attributeRef>
+<attributeRef>DD3B919D-D29B-3407-D9F2-46E60A104F78</attributeRef>
+<attributeRef>C5353D74-562D-591B-830E-8A5157C8629B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

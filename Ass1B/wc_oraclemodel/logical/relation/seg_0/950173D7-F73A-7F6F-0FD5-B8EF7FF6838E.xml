@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="cruise_cruiseport" directorySegmentName="seg_0" id="950173D7-F73A-7F6F-0FD5-B8EF7FF6838E">
+<createdBy>RUIQIAN</createdBy>
+<createdTime>2022-04-26 10:14:38 UTC</createdTime>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="44AEED3F-5255-7A74-60D7-31E8543DE5B4" value="true"/>
+</engineerTo>
+<sourcePk>F12A1290-CA46-8639-7073-DC959CCDC567</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>docked at</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>CF5C571D-60B7-A542-043D-2F8C91C33317</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>7F182F0E-EFEB-FB79-83AF-B798F72331D2</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="touravailability_tour" directorySegmentName="seg_0" id="78044A10-D5A0-8651-F093-5C065B3220F8">
+<createdBy>RUIQIAN</createdBy>
+<createdTime>2022-04-26 15:38:53 UTC</createdTime>
+<ownerDesignName>wc_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="44AEED3F-5255-7A74-60D7-31E8543DE5B4" value="true"/>
+</engineerTo>
+<sourcePk>625DA295-0881-788C-E5C0-4A51093D7454</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>available for</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>EA68BE6D-9722-B067-3D5A-E167D670BB72</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>1D138A91-EF97-0D85-21C4-C172024E957D</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
